@@ -1,6 +1,9 @@
 using System;
 using Xunit;
 using TravelAgency;
+using Moq;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace TravelAgencyTests
 {
@@ -88,6 +91,51 @@ namespace TravelAgencyTests
             var customer = new Customer(defaultFirstName, defaultSurname, isAcceptingMarketing);
 
             Assert.NotEqual(Guid.Empty, customer.Id);
+        }
+    }
+
+    public class AgencyTests
+    {
+        [Fact]
+        public void CheckEmployeeListIsNotEmpty()
+        {
+            // arrange
+            var employee1 = new Employee ("John", "Dillon");
+            var employee2 = new Employee ("Pope","Francis");
+            var listOfEmployees = new List<Employee>()
+            {
+                employee1,
+                employee2
+            };
+            var mockParser = new Mock<ILoadData>();
+            mockParser.Setup(parser => parser.LoadEmployeeData()).Returns(Task.FromResult(listOfEmployees));
+            var agency = new Agency(mockParser.Object);
+
+            // act
+
+            // assert
+            Assert.True(agency.Employees.Count > 0);
+        }
+
+        [Fact]
+        public void CheckHotelListIsNotEmpty()
+        {
+            // arrange
+            var hotel1 = new Hotel("5* Hotel", 200.00, 10.0);
+            var hotel2 = new Hotel("5*+ Hotel", 300.50, 10.0);
+            var listOfHotels = new List<Hotel>()
+            {
+                hotel1,
+                hotel2
+            };
+            var mockParser = new Mock<ILoadData>();
+            mockParser.Setup(parser => parser.LoadHotelData()).Returns(Task.FromResult(listOfHotels));
+            var agency = new Agency(mockParser.Object);
+
+            // act
+
+            // assert
+            Assert.True(agency.Hotels.Count > 0);
         }
     }
 }

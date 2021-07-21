@@ -1,0 +1,56 @@
+﻿[
+  {
+    "name": "La Soiree",
+    "city": "Paris",
+    "costPerNight": 48.5,
+    "starRating": 3.5
+  },
+  {
+    "name": "Un Bonne Nuit",
+    "city": "Paris",
+    "costPerNight": 83.5,
+    "starRating": 4
+  },
+  {
+    "name": "Hotel der Eine Kleine Nachmusik",
+    "city": "Berlin",
+    "costPerNight": 65.0,
+    "starRating": 4
+  },
+  {
+    "name": "Hotel Berliner",
+    "city": "Berlin",
+    "costPerNight": 110.13,
+    "starRating": 4
+  },
+  {
+    "name": "Meze Hottelle",
+    "city": "Nicosia",
+    "costPerNight": 77.75,
+    "starRating": 2.5
+  },
+  {
+    "name": "Marathon Motel",
+    "city": "Athens",
+    "costPerNight": 66.0,
+    "starRating": 3
+  },
+  {
+    "name": "Hotel Brno",
+    "city": "Brno",
+    "costPerNight": 81.1,
+    "starRating": 3.5
+  },
+  {
+    "name": "Hotellier Motellier Holiday Inn",
+    "city": "Paris",
+    "costPerNight": 140.44,
+    "starRating": 5
+  },
+  {
+    "name": "Hotel Athena",
+    "city": "Athens",
+    "costPerNight": 22.5,
+    "starRating": 1
+  }
+]

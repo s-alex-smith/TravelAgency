@@ -1,0 +1,20 @@
+﻿[
+  {
+    "id": "2da352bb-490a-4b82-8284-1b0eeda4975c",
+    "firstName": "Burt",
+    "surname": "Macklin",
+    "isAcceptingMarketing": "false"
+  },
+  {
+    "id": "6e66efcf-1ddb-4ba0-9849-240a403b3712",
+    "firstName": "Janet",
+    "surname": "Snakehole",
+    "isAcceptingMarketing": "true"
+  },
+  {
+    "id": "a248f660-0ccc-4317-8620-f0cb0852c795",
+    "firstName": "Tom",
+    "surname": "Haverford",
+    "isAcceptingMarketing": "false"
+  }
+]
